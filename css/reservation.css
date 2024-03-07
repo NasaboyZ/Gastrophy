@@ -1,0 +1,104 @@
+/* typographie */
+@import url(typographie.css);
+@import url(main.css);
+
+
+body{
+  background-color: var(--primary-color);
+}
+
+/* nav reservation */
+.reservation-nav {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  background:#fff;
+}
+
+/* aside reservation */
+.content {
+  margin: 30px 30px;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.kontaktdaten-td {
+  font-weight: 700;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.name {
+  margin: 20px 0;
+
+}
+.rb-h2{
+  color: #fff;
+}
+
+.spezifische-td {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: "Nanum Gothic";
+  width: 100%;
+  padding: 10px;
+}
+
+.spezifische-td input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background-color:gray;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+
+button:hover {
+  border: 2px solid black;
+}
+
+
+
+.facebook-reservation,
+.instagram-reservation,
+.twitter-reservation {
+  height: 100px;
+  width: 100px;
+  border: solid var(--primary-color) 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

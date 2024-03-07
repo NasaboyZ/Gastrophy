@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typographie.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/datenschutz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <!-- nav in main -->
+        <a class="btn-nav-reservieren" href="reservation.html " aria-label="Reservieren">Reservieren</a>
+        <a href="index.html"><img class="nav_logo" src="logo/logo-von-gastrophy.svg"
+                alt="Delfin mit drei Sternen logo von Gastrophy"></a>
+
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="bar.html">bar</a></li>
+            <li><a href="weine-und-geschichte.html">Wein & Geschichte</a></li>
+            <li class="closeMenu"><i class="fa fa-times"></i></li>
+        </ul>
+
+    </nav>
+    <section class="content-container">
+        <h2 class="subtitel">Datenschutzerklärung</h2>
+        <p class="block-satz">Datenschutzerklärung
+
+            Wer sind wir?
+
+            Diese Webseite und deren Inhalt wird durch eine private Person ohne kommerzielle Interessen zur Verfügung
+            gestellt.
+            Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung
+            (DSGVO), lautet:
+
+            Josef Leite
+            Frankenstrasse 18
+            6003 Luzern
+            E-Mail: josef.gastrosswiss@outlook.ch
+            Webseite: Gastrophy.ch
+
+            Welche personenbezogenen Daten wir sammeln und warum wir sie sammeln.
+            Wenn Sie auf diese Webseite zugreifen werden automatisch Informationen allgemeiner Natur erfasst. Diese
+            Informationen werden im Server-Logfile erfasst und beinhalten die Art des lare
+            Abmeldung aus Ihrem Konto werden die Anmelde-Cookies gelöscht.
+
+            Präferenzdaten
+            Wir möchten unsere Angebote und Leistungen bestmöglich auf unsere Kund*innen ausrichten. Wir bearbeiten
+            deshalb auch Daten zu Ihren Interessen und Präferenzen. Hierzu können wir Verhaltens- und Transaktionsdaten
+            mit anderen Daten verknüpfen und diese Daten personenbezogen und nicht personenbezogen auswerten. So können
+            wir Schlüsse auf Eigenschaften, Präferenzen und voraussichtliches Verhalten ziehen, z.B. Ihre Affinität zu
+            bestimmten Produkten und Dienstleistungen.
+
+            Wir können insbesondere Segmente bilden (dauerhaft oder einzelfallbezogen), also Gruppen von Personen, die
+            mit Bezug auf bestimmte Eigenschaften Ähnlichkeiten aufweisen. Präferenzdaten können personenbezogen
+            verwendet werden (z.B. um Ihnen relevante Werbung anzuzeigen, die Sie interessieren könnte, aber auch
+            nicht-personenbezogen, z.B. zur Marktforschung oder zur Produktentwicklung.
+
+            Die beschriebenen Bearbeitungen können in der Fachsprache auch “Profiling” genannt werden. Zum Profiling
+            finden Sie in Ziffer 11 weitere Informationen.
+        </p>
+    </section>
+    <footer>
+        <div class="footer-start-left">
+            <ul>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="bar.html">Bar</a></li>
+                <li><a href="weine-und-geschichte.html">Weine & Geschichte</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-center">
+            <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <script>
+        // test lauf
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        // close menu when you click on a menu item 
+        menu_items.forEach(item => {
+            item.addEventListener('click', function () {
+                close();
+            })
+        })
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-100%';
+        }
+    </script>
+
+
+</body>
+
+</html>

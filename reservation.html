@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typographie.css">
+  <link rel="stylesheet" href="css/reservation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <nav class="reservation-nav">
+    <!-- header content of the website -->
+    <a class="btn-nav-reservieren" href="reservation.html">Reservieren</a>
+    <a href="index.html"><img class="nav_logo" src="logo/logo-von-gastrophy.svg"
+        alt="Delfin mit drei Sternen logo von Gastrophy"></a>
+
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">
+      <li><a href="restaurant.html">Restaurant</a></li>
+      <li><a href="bar.html">bar</a></li>
+      <li><a href="weine-und-geschichte.html">Wein & Geschichte</a></li>
+      <li class="closeMenu"><i class="fa fa-times"></i></li>
+    </ul>
+
+  </nav>
+  <div class="content">
+    <h2 class="subtitel rb-h2">Reservation</h2>
+    <form>
+      <div class="kontaktdaten-td">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" aria-errormessage="jesus" aria-invalid="false"
+          placeholder="Alexandra Eiera" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="kontaktdaten-td">
+        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="johanes.boy@yhaoo.com" required>
+      </div>
+      <div class="kontaktdaten-td">
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
+          pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+      </div>
+      <hr>
+      <div class="spezifische-td">
+        <label for="adult">Adults</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" max="10">
+      </div>
+      <div class="spezifische-td">
+        <label for="adult">Adults</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" max="10">
+      </div>
+      <div class="spezifische-td">
+        <label for="checkin-date">Reservation Date</label>
+        <input type="date" id="checkin-date" name="checkin" required>
+      </div>
+      <div class="kontaktdaten-td">
+        <label for="room-selection">Occasion ?</label>
+        <select id="room-selection" name="room_preference" required>
+          <option value="">Breakfast</option>
+          <option value="connecting">Lunch</option>
+          <option value="adjoining">Dinner</option>
+        </select>
+      </div>
+      <hr>
+      <div class="kontaktdaten-td">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+          required></textarea>
+      </div>
+      <button type="submit">Book your Table</button>
+    </form>
+  </div>
+
+
+
+ 
+
+
+  <footer>
+    <div class="footer-start-left">
+      <ul>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="bar.html">Bar</a></li>
+        <li><a href="weine-und-geschichte.html">Weine & Geschichte</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-center">
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+
+  <script>
+    // eine quelle finden
+    const arccodion = document.getElementsByClassName
+      ('contentBx');
+
+    for (i = 0; i < arccodion.length; i++) {
+      arccodion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+      })
+    }
+    // test lauf github nicht vergessen anzugeben
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+    const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+    openMenu.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+
+    menu_items.forEach(item => {
+      item.addEventListener('click', function () {
+        close();
+      })
+    })
+
+    function show() {
+      mainMenu.style.display = 'flex';
+      mainMenu.style.top = '0';
+    }
+    function close() {
+      mainMenu.style.top = '-100%';
+    }
+
+  </script>
+</body>
+
+</html>

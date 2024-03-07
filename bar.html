@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typographie.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="background-video">
+    <h3>Bar</h3>
+    <video class="video-bar" muted autoplay loop src="video/Freunde-Stossen-an.mp4"></video>
+    <nav class="nav-bar">
+      <a class="btn-nav-reservieren" href="reservation.html">Reservieren</a>
+      <a href="index.html"><img class="nav_logo" src="logo/logo-von-gastrophy.svg"
+          alt="Delfin über drei Sterne so Sieht das Gastrophy Logo aus."></a>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="bar.html" class="active">bar</a></li>
+        <li><a href="weine-und-geschichte.html">Wein & Geschichte</a></li>
+        <li class="closeMenu"><i class="fa fa-times"></i></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="content-mg">
+
+
+    <div class="contianer-bar-in-section">
+      <div class="container-für-texte">
+        <h2 class="subtitel">Bar Chef Sadik</h2>
+        <p class="block-satz">Kommen Sie ins Gastrophy und lassen Sie sich
+          verwöhnen von Sadik unseren Barchef, gelernter
+          Sommelier, Spirituosen Sommelier und Bier Sommelier.
+          Bestellen Sie Ihren Wunschcocktail und Sadik wird
+          Ihnen die spannende Geschichte hinter dem Cocktail
+          erzählen. </p>
+      </div>
+      <div class="img-container">
+        <img class="img" src="bilder/sadik-macht-hugo.jpeg" srcset="bilder/sadik-macht-hugo.webp"
+          alt="Sadik macht einen Hugo und schaut ernst.">
+      </div>
+    </div>
+
+    <div class=" section-bar-bs-aside">
+
+      <h2 class="subtitel">Cocktails: ursprüngliche Rezepte und deren Entwicklungen</h2>
+      <div class="selection-for-arrows">
+        <div class="arrow-left-wein">
+          <i class="fa-solid fa-arrow-right fa-rotate-180 left fa-3x"></i>
+        </div>
+        <div class="drink-container">
+          <img src="bilder/amareto.png" srcset="bilder/amareto.webp" alt="amaretto-sour">
+        </div>
+        <div class="arrow-right-wein">
+          <i class="fa-solid fa-arrow-right right fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="section-beschreibung-container">
+        <h2 class="subtitel">Amaretto Sour</h2>
+        <p class="block-satz">Der Amaretto Sour entstand in den 70er Jahren und bestand in seiner Urform aus Amaretto,
+          Zucker und Zitronensaft. In den USA wird der Amaretto Sour oft anstelle von Zitrussaft und Zucker mit Sour-Mix
+          zubereitet, was im Prinzip eine fertig erhältliche Mischung der beiden Komponenten ist.</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="container-for-sozial-media">
+      <div class="facebook"><i class="fa-brands fa-facebook-f fa-3x" style="color: #000000;"></i></div>
+      <div class="twitter"><a href="https://twitter.com/Gastrophy_"><i class="fa-brands fa-twitter fa-3x"
+            style="color: #050505;"></i></a></div>
+      <div class="instagram"><i class="fa-brands fa-instagram  fa-3x" style="color: #0a0a0a;"></i></div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-start-left">
+      <ul>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="bar.html">Bar</a></li>
+        <li><a href="weine-und-geschichte.html">Weine & Geschichte</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-center">
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+
+
+  </footer>
+
+  <script>
+    // test lauf
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const openMenu = document.querySelector('.openMenu');
+    const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+    openMenu.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+
+    // close menu when you click on a menu item 
+    menu_items.forEach(item => {
+      item.addEventListener('click', function () {
+        close();
+      })
+    })
+
+    function show() {
+      mainMenu.style.display = 'flex';
+      mainMenu.style.top = '0';
+    }
+    function close() {
+      mainMenu.style.top = '-100%';
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/typographie.css">
+    <link rel="stylesheet" href="CSS/impressum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <!-- nav in main -->
+        <a class="btn-nav-reservieren" href="reservation.html " aria-label="Reservieren">Reservieren</a>
+        <a href="index.html"><img class="nav_logo" src="logo/logo-von-gastrophy.svg"
+                alt="Delfin mit drei Sternen logo von Gastrophy"></a>
+
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="bar.html">bar</a></li>
+            <li><a href="weine-und-geschichte.html">Wein & Geschichte</a></li>
+            <li class="closeMenu"><i class="fa fa-times"></i></li>
+        </ul>
+
+    </nav>
+    <section class="content-container">
+        <h2 class="subtitel">Impressum</h2>
+        <p class="block-satz">Verantwortlich
+
+            Frankenstrasse 15
+
+            6003 Luzern
+
+
+        </p>
+
+
+        <p class="block-satz kontakt">Kontakt
+
+            E-mail: info.gastrophy@hotmail.ch/ josef.gastroswiss@outlook.ch
+
+            Kontakt Information:
+
+            <a href="https://helpcenter.gastrophy.ch/hc/de">https://helpcenter.gastrophy.ch/hc/de</a>
+        </p>
+
+    </section>
+
+    <div class="container-for-sozial-media">
+        <div class="facebook"><i class="fa-brands fa-facebook-f fa-5x" style="color: #000000;"></i></div>
+        <div class="twitter"><i class="fa-brands fa-twitter fa-5x" style="color: #050505;"></i></div>
+        <div class="instagram"><i class="fa-brands fa-instagram  fa-5x" style="color: #0a0a0a;"></i></div>
+    </div>
+
+
+    <footer>
+        <div class="footer-start-left">
+            <ul>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="bar.html">Bar</a></li>
+                <li><a href="weine-und-geschichte.html">Weine & Geschichte</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-center">
+            <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        // test lauf
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        // close menu when you click on a menu item 
+        menu_items.forEach(item => {
+            item.addEventListener('click', function () {
+                close();
+            })
+        })
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-100%';
+        }
+    </script>
+
+
+</body>
+
+</html>

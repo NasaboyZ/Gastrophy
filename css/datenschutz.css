@@ -1,0 +1,47 @@
+/* typographie */
+@import url(typographie.css);
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/* nav */
+w .nav-datenschutz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to left, #000 -6%, #7a16b8 37%);
+  padding: 1.5rem 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* aside datenschutz */
+.content-container {
+  margin: 30px 30px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 15%;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,379 @@
+/* typographie */
+@import url(typographie.css);
+
+/* Navigation Restaurant */
+
+.nav-restaurant {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 100%;
+}
+
+/* header */
+.background-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+  margin-top: 2px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.background-video > h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-size: clamp(1rem, 12vw, 11rem);
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.video-restaurant {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+/* section */
+.section-für-restaurant-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.875rem;
+  background-image: url(/bilder/desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 286%;
+    background-position: -106vw -172vh;
+}
+.container-restaurant-anfang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.25rem 0;
+  gap: 2rem;
+}
+
+.section-ltr {
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-restaurant-anfang {
+    flex-direction: column;
+    margin: 1.875rem 1.875rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-mg{
+    margin: 0rem;
+  }
+  .räumlichkeite-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 1.875rem 1.875rem;
+  }
+
+  .subtitel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.875rem 1.875rem;
+  }
+
+  .block-satz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-ltr {
+    width: 100%;
+  }
+  .btn-asid-reservieren-rs {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.563rem 1.188rem;
+    margin: 0px 3rem;
+    text-decoration: none;
+    border-radius: 10px 10px;
+    box-shadow: 0 2px 4px rgb(10, 12, 12);
+    cursor: pointer;
+    position: relative;
+    top: 2rem;
+    margin-top: 2rem;
+    right: 1.875rem;
+  }
+  .img-container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.section-für-restaurant-page{
+  background-repeat: no-repeat;
+  background-size: 286%;
+  background-position: -76vw -69vh;
+}
+}
+@media screen and (max-width:1080px) {
+  .section-für-restaurant-page{
+    background-size: 336%;
+    background-position: -163vw -72vh;
+  }
+  
+}
+@media screen and (max-width:990px) {
+  .section-für-restaurant-page{
+    background-size: 266%;
+    background-position: -118vw -26vh;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+  .section-für-restaurant-page{
+    background-image: url(/bilder/rechteck-for-td.svg);
+    background-repeat: no-repeat;
+    background-size: 261%;
+    background-position: -95vw -52vh;
+  }
+  
+}
+
+
+@media screen and (max-width: 620px) {
+  .bildergalerie {
+    flex-wrap: wrap;
+  }
+
+  .section-für-restaurant-page{
+    background-size: 458%;
+    background-position: -269vw -86vh;
+  }
+}
+
+
+@media screen and (max-width:580px) {
+  .section-für-restaurant-page{
+    background-size: 236%;
+  }
+  
+}
+@media screen and (max-width:553px) {
+  .section-für-restaurant-page{
+    background-size: 393%;
+    background-position: -242vw -70vh;
+  }
+  
+}
+@media screen and (max-width:538px) {
+  .section-für-restaurant-page{
+    background-size: 395%;
+    background-position: -256vw -33vh;
+
+  }
+  
+}
+@media screen and(max-width:490px) {
+  .section-für-restaurant-page{
+    background-size: 266%;
+    background-position: -120vw -15vh;
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .section-für-restaurant-page{
+    background-size: 276%;
+    background-position: -120vw -8vh;
+  }
+}
+
+@media screen and (max-width:470px) {
+  .section-für-restaurant-page{
+    background-size: 276%;
+    background-position: -115vw -6vh;
+  }
+  
+}
+@media screen and (max-width:460px) {
+  .section-für-restaurant-page{
+    background-size: 297%;
+    background-position: -122vw -6vh;
+  }
+  
+}
+
+@media screen and (max-width:431px) {
+  .section-für-restaurant-page{
+    background-size: 466%;
+    background-position: -293vw -50vh;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .section-für-restaurant-page{
+    background-size: 466%;
+    background-position: -296vw -41vh;
+  }
+  
+}
+@media screen and (max-width:380px) {
+  .section-für-restaurant-page{
+    background-size: 502%;
+    background-position: -328vw -54vh;
+  }
+}
+@media screen and (max-width:361px) {
+  .section-für-restaurant-page{
+    background-size: 643%;
+    background-position: -308vw -52vh;
+}
+  
+}
+/* effekt für bilder */
+.mittlere-vorstellung {
+  list-style: none;
+  margin: 0px 7px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.bildergalerie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallerie {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 1000ms;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+figure::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  /* height: 200%; */
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 300ms;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
+  opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  figcaption {
+    transform: translate3d(0, 2rem, 0);
+  }
+
+  figure::after {
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 900ms;
+  }
+
+  a:is(:hover, :focus) figure::after {
+    transform: scale(2.5);
+  }
+
+  a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
+  }
+
+  a:is(:hover, :focus) .gallerie {
+    transform: scale(1.2);
+  }
+}
+
+.räumlichkeite-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  /* flex-wrap: wrap; */
+  margin: 1.25rem 0;
+  gap: 2rem;
+}
+
+.btn-asid-reservieren-rs {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.563rem 1.188rem;
+  margin: 0px 3rem;
+  text-decoration: none;
+  border-radius: 10px 10px;
+  box-shadow: 0 2px 4px rgb(10, 12, 12);
+  cursor: pointer;
+  position: relative;
+  top: 2rem;
+  right: 1.875rem;
+}

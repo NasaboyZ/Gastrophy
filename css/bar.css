@@ -1,0 +1,308 @@
+/* typographie */
+@import url(typographie.css);
+@import url(wein-und-geschichte.css);
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 100%;
+}
+
+/* header */
+.background-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+  margin-top:2px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.background-video > h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-size: clamp(1rem, 12vw, 11rem);
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.video-bar {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+/* main*/
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.875rem;
+  background-image: url(/bilder/desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 225%;
+  background-position: -60vw -177vh;
+}
+
+
+.contianer-bar-in-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.25rem 0;
+  gap: 2rem;
+}
+.selection-for-arrows{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solid{
+  color: black;
+}
+
+.container-für-texte {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* responsiv main */
+@media screen and (max-width: 1200px) {
+  .contianer-bar-in-section {
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content-mg{
+    margin: 0rem;
+  }
+  .räumlichkeite-container {
+    display: flex;
+    align-items: center;
+
+    flex-direction: row-reverse;
+    margin: 1.875rem 1.875rem;
+  }
+
+  .subtitel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.875rem 1.875rem;
+  }
+
+  .block-satz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section{
+    background-repeat: no-repeat;
+    background-size: 286%;
+    background-position: -161vw -69vh;
+  }
+}
+@media screen and (max-width:1080px) {
+  section{
+    background-size: 356%;
+    background-position: -182vw -72vh;
+  }
+  
+}
+@media screen and (max-width:990px) {
+  section{
+    background-size: 314%;
+    background-position: -173vw -53vh;
+  }
+  
+}
+@media screen and (max-width:768px) {
+  section{
+    background-image: url(/bilder/rechteck-for-td.svg);
+    background-repeat: no-repeat;
+    background-size: 261%;
+    background-position: -124vw -52vh;
+  }
+  
+}
+
+@media screen and (max-width: 620px) {
+  .selection-for-arrows {
+    align-items: center;
+    display: inline-flex;
+    padding: 0.75rem;
+  }
+  .arrow-right,
+  .arrow-left {
+    font-size: 2rem;
+    
+  }
+  .section-beschreibung-container{
+    padding-top: 2rem;
+  }
+  section{
+    background-size: 458%;
+    background-position: -159vw -237vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .selection-for-arrows {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .drink-container {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width:553px) {
+  section{
+    background-size: 393%;
+    background-position: -199vw -84vh;
+
+  }
+  
+}
+
+@media screen and (max-width:538px) {
+  section{
+    background-size: 395%;
+    background-position: -213vw -68vh;
+
+  }
+  
+}
+
+@media screen and(max-width:490px) {
+ section{
+    background-size: 266%;
+    background-position: -120vw -15vh;
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  section{
+    background-size: 360%;
+    background-position: -190vw -66vh;
+  }
+}
+
+@media screen and (max-width:470px) {
+  section{
+    background-size: 276%;
+    background-position: -115vw -6vh;
+  }
+  
+}
+@media screen and (max-width:460px) {
+  section{
+    background-size: 297%;
+    background-position: -122vw -6vh;
+  }
+  
+}
+
+@media screen and (max-width:431px) {
+  section{
+    background-size: 466%;
+    background-position: -293vw -50vh;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .drink-container{
+    width: auto;
+  }
+  section{
+    background-size: 466%;
+    background-position: -273vw -41vh;
+  }
+  
+}
+@media screen and (max-width:380px) {
+  section{
+    background-size: 502%;
+    background-position: -286vw -54vh;
+  }
+}
+@media screen and (max-width:361px) {
+  section{
+    background-size: 643%;
+    background-position: -397vw -52vh;
+}
+
+
+.arrow-right,
+.arrow-left {
+  height: 100px;
+  width: 100px;}
+
+.selection-for-arrows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 9rem 0;
+  
+}
+.drink-container {
+  height: 30rem;
+  width: auto;
+}
+
+.drink-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 2rem;
+}
+
+.container-for-sozial-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  margin: 3.75rem 1.875rem;
+}
+.facebook,
+.instagram,
+.twitter {
+  height: 100px;
+  width: 100px;
+  border: solid var(--primary-color) 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}}

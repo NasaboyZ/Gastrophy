@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="4390" viewBox="0 0 1920 4390">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="4390"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="4390" fill="#fff"/>
+    <g id="Desktop" transform="matrix(-0.999, 0.052, -0.052, -0.999, 2535.629, 5533.327)">
+      <g id="Gruppe_135" data-name="Gruppe 135">
+        <g id="Gruppe_134" data-name="Gruppe 134" transform="translate(-151 -1369)">
+          <g id="Gruppe_133" data-name="Gruppe 133" transform="translate(7.012 1462)">
+            <g id="Gruppe_136" data-name="Gruppe 136" transform="translate(743 -481)">
+              <g id="Gruppe_137" data-name="Gruppe 137">
+                <rect id="Rechteck_141" data-name="Rechteck 141" width="974.381" height="3870.227" transform="translate(2362.507 2952.225) rotate(131)" fill="#f2f2f2"/>
+                <rect id="Rechteck_157" data-name="Rechteck 157" width="974.381" height="3870.227" transform="translate(1861.609 2472.424) rotate(54)" fill="#f2f2f2"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

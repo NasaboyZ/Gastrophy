@@ -1,0 +1,43 @@
+body * {
+  font-family: 'Open Sans', sans-serif;
+}
+.titel {
+  font-size: 100px;
+  margin: 74px 44px;
+  color:  #4b7235;
+  font-family: 'Open Sans', sans-serif;
+  border: 1 px solid white;
+  width: 214px;
+  
+}
+
+.subtitel {
+  font-size: clamp(1rem, 11vw, 3rem); 
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 23px 1px;
+  font-weight: 900;
+  color: var(--ft-color-black);
+}
+
+.sm-subtitel {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 15vw, 2rem); 
+  margin: 23px 1px;
+  color: var(--ft-color-black);
+}
+
+.block-satz {
+  line-height: 1;
+  font-size: clamp(0.8rem, 7vw, 1.5rem);
+  font-family:  'Open Sans', sans-serif;
+  margin: 1.25rem 0.375rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-weight: 400;
+  color: var(--ft-color-black);
+}
+
+/* restaurant */
